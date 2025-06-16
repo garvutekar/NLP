@@ -1,0 +1,189 @@
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Starting notebook server</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="/jupyterhub/hub/static/css/style.min.css?v=de37c927476e635f657bafc35a5e1ae9c0f3ce691c5779b0d3be84fa5e2ec3813214270a51f83fc93b945e5d7e418046af1e370e9538ea8a44d49d472ee7dffe" type="text/css"/>
+    
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    
+    <script src="/jupyterhub/hub/static/components/requirejs/require.js?v=1ff44af658602d913b22fca97c78f98945f47e76dacf9800f32f35350f05e9acda6dc710b8501579076f3980de02f02c97f5994ce1a9864c21865a42262d79ec" type="text/javascript" charset="utf-8"></script>
+    <script src="/jupyterhub/hub/static/components/jquery/dist/jquery.min.js?v=bf6089ed4698cb8270a8b0c8ad9508ff886a7a842278e98064d5c1790ca3a36d5d69d9f047ef196882554fc104da2c88eb5395f1ee8cf0f3f6ff8869408350fe" type="text/javascript" charset="utf-8"></script>
+    <script src="/jupyterhub/hub/static/components/bootstrap/dist/js/bootstrap.min.js?v=ca4675410af4272ff8664bcabaa5a7e2217796a3d9ca28fd891bfab06a8b45d4cf918ebd617ebeef0bd51a6b1d05b8887cdffc39db08ec70018ef12893a668a5" type="text/javascript" charset="utf-8"></script>
+    
+    <script>
+      require.config({
+          
+          urlArgs: "v=20250616094023",
+          
+          baseUrl: '/jupyterhub/hub/static/js',
+          paths: {
+            components: '../components',
+            jquery: '../components/jquery/dist/jquery.min',
+            bootstrap: '../components/bootstrap/dist/js/bootstrap.min',
+            moment: "../components/moment/moment",
+          },
+          shim: {
+            bootstrap: {
+              deps: ["jquery"],
+              exports: "bootstrap"
+            },
+          }
+      });
+    </script>
+
+    <script type="text/javascript">
+      window.jhdata = {
+        base_url: "/jupyterhub/hub/",
+        prefix: "/jupyterhub/",
+        
+        user: "c4aa6a31-8778-4e79-96de-ab90cdd4435a",
+        
+        
+        admin_access: false,
+        
+        
+        options_form: false,
+        
+      }
+    </script>
+
+    <script>
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+        heap.load("758475466");
+    </script>
+
+    
+    
+
+</head>
+
+<body>
+
+<noscript>
+  <div id='noscript'>
+    JupyterHub requires JavaScript.<br>
+    Please enable it to proceed.
+  </div>
+</noscript>
+
+
+  <nav class="navbar navbar-default" style="background-color: #fff; border: 0">
+    <div class="container-fluid">
+      <div class="navbar-header">
+	 <img id="id_logo" src="/static/anywhere/images/Anaconda_Icon.png" height="30px" style="margin-top: 5px; margin-bottom: 5px">
+      </div>
+      
+      
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        
+          <h1>
+            
+              Server not running
+            
+          </h1>
+        
+        
+          <p>
+            
+              Your server  is not running.
+              
+                It will be restarted automatically.
+                If you are not redirected in a few seconds,
+                click below to launch your server.
+              
+            
+          </p>
+        
+        
+          <a id="start"
+             role="button"
+             class="btn btn-lg btn-primary"
+             href="/jupyterhub/hub/spawn/c4aa6a31-8778-4e79-96de-ab90cdd4435a?next=%2Fjupyterhub%2Fhub%2Fuser%2Fc4aa6a31-8778-4e79-96de-ab90cdd4435a%2Ffiles%2FKMeans%2FTask%2FIris%2520flower%2520classification.ipynb%3F_xsrf%3DMnwxOjB8MTA6MTc1MDA2NTU0OXw1Ol94c3JmfDE0ODpWMnh0ZVRremIydENTV1pVYjFkZlducEpTbGR3UVZGS1JtZERVRFZ5TVUxeVFUUklSMWMxYzJ4b09EMDZPV0kyTlRsa1ltRmpNVFEzTkdJd01EaGtZems0Tm1Rd05XTTRZbUUyWmpBd01tUXdPVEE1TXpFNFpEQTJOelkyWWpVMU5tVTJORFZtTldJMU5HTXlaUT09fDQ2M2EwMjJlMDg4NmM0NThmMmYxOTZhNzUyYTZiNjhhNTIxMzg2ZWM2Mjc2ZjRkNDIyY2RiYzY3NmJjMjc4N2Y">
+            
+              Launch
+            
+            Server 
+          </a>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="error-dialog" tabindex="-1" role="dialog" aria-labelledby="error-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="error-label">Error</h4>
+      </div>
+      <div class="modal-body">
+        
+  <div class="ajax-error">
+    The error
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+  
+    <script type="text/javascript">
+      var spawn_url = "/jupyterhub/hub/spawn/c4aa6a31-8778-4e79-96de-ab90cdd4435a?next=%2Fjupyterhub%2Fhub%2Fuser%2Fc4aa6a31-8778-4e79-96de-ab90cdd4435a%2Ffiles%2FKMeans%2FTask%2FIris%2520flower%2520classification.ipynb%3F_xsrf%3DMnwxOjB8MTA6MTc1MDA2NTU0OXw1Ol94c3JmfDE0ODpWMnh0ZVRremIydENTV1pVYjFkZlducEpTbGR3UVZGS1JtZERVRFZ5TVUxeVFUUklSMWMxYzJ4b09EMDZPV0kyTlRsa1ltRmpNVFEzTkdJd01EaGtZems0Tm1Rd05XTTRZbUUyWmpBd01tUXdPVEE1TXpFNFpEQTJOelkyWWpVMU5tVTJORFZtTldJMU5HTXlaUT09fDQ2M2EwMjJlMDg4NmM0NThmMmYxOTZhNzUyYTZiNjhhNTIxMzg2ZWM2Mjc2ZjRkNDIyY2RiYzY3NmJjMjc4N2Y";
+      var implicit_spawn_seconds = 0.1;
+      setTimeout(function() {
+          console.log("redirecting to spawn at", spawn_url);
+          window.location = spawn_url;
+        },
+        1000 * implicit_spawn_seconds
+      );
+    </script>
+  
+  <script type="text/javascript">
+    require(["not_running"]);
+  </script>
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95095cf5db9647f6',t:'MTc1MDA2NzAwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
